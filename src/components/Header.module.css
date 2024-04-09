@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.btnMenuMobile {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  margin-right: 86px;
+}
+
+.menu li a,
+.login,
+.signup {
+  transition: .3s;
+}
+
+.menu li a:hover,
+.login:hover,
+.signup:hover {
+  text-decoration: underline;
+}
+
+.menu li a,
+.login,
+.signup,
+.language {
+  color: #212832;
+  font-weight: 600;
+}
+
+.login {
+  margin-right: 52px;
+}
+
+.signup {
+  border: 1px solid #212832;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  margin-right: 42px;
+}
+
+.language {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.language:focus {
+  outline: none;
+}
+
+@media (max-width: 1000px) {
+  .btnMenuMobile {
+    background-color: transparent;
+    border: none;
+    display: block;
+    cursor: pointer;
+  }
+
+  .btnMenuMobile img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .links {
+    position: absolute;
+    flex-direction: column;
+    top: 100px;
+    left: 0;
+    background-color: #FFF1DA;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: .7s;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .links.menuActive {
+    opacity: 1;
+    visibility: visible;
+    height: 450px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .language {
+    position: relative;
+    right: 20px;
+  }
+}
