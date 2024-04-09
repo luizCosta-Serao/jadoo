@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-image: url('../assets/decore.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 1075px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
