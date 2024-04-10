@@ -1,0 +1,173 @@
+.heroHome {
+  display: flex;
+  box-sizing: border-box;
+  background-image: url('../../../assets/home/hero/image-hero-home.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.heroSubtitle {
+  text-transform: uppercase;
+  color: #DF6951;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: var(--font-poppins);
+  margin-bottom: 24px;
+}
+
+.heroTitle {
+  font-size: 5.25rem;
+  color: #181E4B;
+  font-family: var(--font-valkhov);
+  line-height: 89px;
+  letter-spacing: -4%;
+  margin-top: 0px ;
+  width: 590px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.heroTitle::after {
+  content: '';
+  background-image: url('../../../assets/home/hero/decore-text-hero.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  width: 385px;
+  height: 12px;
+  position: absolute;
+  right: -70px;
+  top: 70px;
+  z-index: -1;
+}
+
+.heroDescription {
+  color: #5E6282;
+  font-family: var(--font-poppins);
+  line-height: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  max-width: 477px;
+  width: 100%;
+  margin-bottom: 34px;
+}
+
+.heroBtns {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.findMore {
+  background-color: #F1A501;
+  width: 170px;
+  height: 60px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.findMore:hover {
+  background-color: #DF6951;
+}
+
+.playDemo {
+  color: #686D77;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 1,0625rem;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.playDemo::before {
+  content: '';
+  background-image: url('../../../assets/home/hero/play-button.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 10px;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  transition: .2s;
+}
+
+.playDemo:hover::before {
+  scale: 1.2;
+}
+
+.playDemo img {
+  height: 30px;
+  background-color: red;
+}
+
+@media (max-width: 1100px) {
+  .heroHome {
+    background-size: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroTitle {
+    font-size: 4rem;
+    max-width: 500px;
+    line-height: 80px;
+  }
+
+  .heroTitle::after {
+    width: 305px;
+    right: -20px;
+  }
+}
+
+@media (max-width: 786px) {
+  .heroHome {
+    background-image: none;
+    justify-content: center;
+  }
+
+  .heroSubtitle {
+    width: auto;
+  }
+
+  .heroTitle {
+    width: auto;
+    max-width: auto;
+  }
+
+  .heroDescription {
+    max-width: auto;
+    width: auto;
+  }
+
+  .heroTitle::after {
+    width: 200px;
+    right: 0px;
+    top: 65px;
+  }
+}
+
+@media (max-width: 500px) {
+  .heroTitle {
+    font-size: 3rem;
+    line-height: 65px;
+  }
+
+  .heroTitle::after {
+    top: 55px;
+    z-index: -1;
+  }
+
+  .heroBtns {
+    gap: 22px;
+  }
+}
