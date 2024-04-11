@@ -4,8 +4,8 @@ body {
   box-sizing: border-box;
   background-image: url('../assets/decore.png');
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 1075px;
+  background-position: right top;
+  background-size: 750px;
 }
 
 ul {
