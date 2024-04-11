@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Poppins, Volkhov } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -9,6 +9,22 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   display: 'swap'
 });
+
+const poppins = Poppins({
+  weight: ['400', '500', '600', '700'],
+  style: 'normal',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-poppins'
+})
+
+const volkhov = Volkhov({
+  weight: ['700'],
+  style: 'normal',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-valkhov'
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={openSans.className}>
+      <body className={`${openSans.className} ${poppins.variable} ${volkhov.variable}`}>
         <Header />
         {children}
       </body>

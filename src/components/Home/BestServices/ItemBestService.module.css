@@ -1,0 +1,29 @@
+.itemBestService {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.itemBestService img {
+  min-width: 45px;
+}
+
+.itemBestService h3 {
+  color: #1E1D4C;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.itemBestService p {
+  color: #5E6282;
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 26px;
+  max-width: 181px;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
