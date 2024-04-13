@@ -37,7 +37,7 @@ const Steps = () => {
         </ul>
       </div>
       <div className={styles.stepsImg}>
-        <Image src={ImgDecoration} alt='' width={485} height={459} sizes='100vw' />
+        <Image src={ImgDecoration} alt='' width={485} height={459} />
       </div>
     </section>
   )
